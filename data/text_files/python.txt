@@ -1,0 +1,32 @@
+ Interview Answer Templates
+"Explain OOP in simple words"
+"OOP is a programming paradigm where we organize code into classes and objects. A class is like a
+blueprint — say, a blueprint for a Car — and objects are actual cars built from that blueprint. OOP has
+four pillars: Encapsulation (hiding internal details with access modifiers), Inheritance (child class reusing
+parent's features with extends), Polymorphism (same method name behaving differently —
+overloading and overriding), and Abstraction (showing only what's necessary using abstract classes and
+interfaces). This makes code more organized, reusable, and maintainable."
+"What's the difference between Abstraction and Encapsulation?"
+"Both are about hiding, but they hide different things. Abstraction hides complexity — it says 'here's
+WHAT you can do' without showing HOW. Like using an abstract class or interface — you define
+processPayment() but each subclass implements it differently. Encapsulation hides data — it
+bundles data with methods and controls access using access modifiers like private. Like a
+24 / 25
+OOP_Concepts_Easy_Guide.md 2026-03-09
+25 / 25
+BankAccount class — you can't directly change the balance, you have to use deposit() or
+withdraw(). Abstraction is about design, Encapsulation is about data protection."
+"What's the difference between Abstract Class and Interface?"
+"An abstract class can have both abstract and concrete methods, variables, and constructors — use it
+when classes share code and have an IS-A relationship, like Animal → Dog, Cat. An interface defines
+only a contract — use it when unrelated classes share a capability, like Flyable → Bird, Airplane,
+Drone. Java supports multiple interfaces but only single class inheritance, so interfaces help achieve
+multiple inheritance."
+"When would you use Composition over Inheritance?"
+"I prefer Composition when the relationship is 'HAS-A' rather than 'IS-A'. For example, a Car HAS-A
+Engine — using composition here gives me flexibility to swap engines without rewriting the Car class.
+Inheritance creates tight coupling and Java only allows single inheritance. With composition, I can
+combine multiple capabilities — a Car can have an Engine, GPS, and AirConditioner — which would be
+impossible with single inheritance."
+Remember: OOP is not just theory — it's a way of thinking. Practice building small projects using
+these concepts, and they'll become second nature!
