@@ -106,12 +106,6 @@ print(answer)
 - Word (`.docx`)
 - JSON (`.json`)
 
-## Notes
-
-- Do not commit `.env` or API keys.
-- If you add more documents or change the embedding pipeline, delete `faiss_store/faiss.index` and rebuild.
-- The LLM integration uses `gemma-7b-it` via Groq; if this model changes, update `src/search.py` accordingly.
-
 ## License
 
 This repository does not include a license file. Add one if you plan to publish or share the project publicly.
